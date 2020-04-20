@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="/lap1?action=ketqua" method="post">
+	<form action="<c:url value='/lab1'/>" method="post">
 		<h1>Calculator</h1>
 		<div class="form-group ">
 			<label for="ToanHang1">Toán hạng thứ nhất</label> 
