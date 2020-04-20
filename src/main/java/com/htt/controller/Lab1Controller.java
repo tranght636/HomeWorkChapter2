@@ -1,6 +1,8 @@
 package com.htt.controller;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,9 +15,10 @@ import com.htt.utils.DispatcherUtil;
 @WebServlet(urlPatterns = { "/lab1" })
 public class Lab1Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		
 		DispatcherUtil.returnViewName(req, res, "lab1");
 	}
 
