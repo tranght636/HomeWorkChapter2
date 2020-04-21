@@ -6,6 +6,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class DispatcherUtil {
 
@@ -18,9 +19,9 @@ public class DispatcherUtil {
 		res.sendRedirect(req.getContextPath() + url);
 	}
 	
-	//Dùng cho api
-//	public static void send(HttpServletResponse res, Object object) throws ServletException, IOException {
-//		ObjectMapper mapper = new ObjectMapper();
-//		mapper.writeValue(res.getOutputStream(), object);
-//	}
+	//api
+	public static void send(HttpServletResponse res, Object object) throws ServletException, IOException {
+		ObjectMapper mapper = new ObjectMapper();
+		mapper.writeValue(res.getOutputStream(), object);
+	}
 }

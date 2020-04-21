@@ -10,7 +10,7 @@
 <body>
 	<h1>Home work chapter 2</h1>
 	<a href='<c:url value="/lab1"/>'>Lab 1</a><br/>
-	<a href='<c:url value="/lab1?action=pheptoan"/>'>Lab 2</a><br/>
+	<a href='<c:url value="/lab2"/>'>Lab 2</a><br/>
 	<a href='<c:url value="/lab1?action=pheptoan"/>'>Lab 3</a><br/>
 	<a href='<c:url value="/lab4"/>'>Lab 4</a><br/>
 	<a href='<c:url value="/lab1?action=pheptoan"/>'>Lab 5</a>
